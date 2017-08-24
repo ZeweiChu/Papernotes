@@ -5,8 +5,12 @@
 
 ## Highlights
 
+- Knowledge based question answering
+- Answer questions with longer document
 - Transfer learning in question answering on different datasets
 - Systems: Attention visualization system. 
+
+
 
 ## In ACL 2017
 
@@ -50,7 +54,7 @@ combine a coarse, fast model for selecting relevant sentences and a more expensi
 
 ### Model
 
-[Model](images/CoarseToFineModel.png)
+<img src="images/CoarseToFineModel.png" width="400px" />
 
 #### fast model for selecting relevant sentences (a distribution over sentences) given the input question x and the document d. 
 - BoW model
@@ -64,12 +68,14 @@ combine a coarse, fast model for selecting relevant sentences and a more expensi
 ### Learning
 - Distant supervision: set the gold sentence to be the first sentence containing the answer string, then train two models. 
 - Reinforcement Learning
-![Reinforcement](images/CoarseToFineReinforceObj.png)
+
+<img src="images/CoarseToFineReinforceObj.png" width="400" />
+
 To reduce variance, they use curriculum learning, to first start with distant supervision, then switch to REINFORCE. 
 - soft attention
 
 ### Experiments
-![results](images/CoarseToFineModelResults.png)
+<img src="images/CoarseToFineModelResults.png" width="400" />
 
 ### Comments
 I like the part of using reinforcement learning to train two models together the best. 
