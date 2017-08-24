@@ -129,8 +129,8 @@ Dataset: WikiTableQuestions(http://www.cs.stanford.edu/people/ppasupat/resource/
 ### System
 
 This work is a good visualization system for attention based QA models. 
-![Architecture](images/Non-Factoid-Arch.png)
-![User Interface](images/Non-Factoid-Interface.png)
+<img src="images/Non-Factoid-Arch.png" width="400px" />
+<img src="images/Non-Factoid-Interface.png" width="400px" />
 
 [code](https://github.com/UKPLab/acl2017-non-factoid-qa)
 
