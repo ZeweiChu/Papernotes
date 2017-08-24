@@ -102,8 +102,6 @@ a neural model with dynamic knowledge graph embeddings that evolve as the dialog
 
 
 
-
-
 [Neural Belief Tracker: Data-Driven Dialogue State Tracking](http://aclweb.org/anthology/P/P17/P17-1163.pdf)
 
 [Are you asking the right questions? Teaching Machines to Ask Clarification Questions](http://aclweb.org/anthology/P/P17/P17-3006.pdf)
