@@ -1,6 +1,8 @@
 
 # Dialog generation & Chatbot
 
+## Zewei Chu
+
 ## Summaries
 - How to generate dialog: Seq2Seq, reinforcement learning with policy gradient
 - Dialog diversity: Conditional variational autoencoder
@@ -9,7 +11,7 @@
 - Dialog evaluation: BLEU(not so good), Adem, 
 
 
-## Zewei Chu
+
 
 ## In ACL 2017
 
