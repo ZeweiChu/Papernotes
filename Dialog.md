@@ -17,16 +17,35 @@
 
 ## [Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access](http://aclweb.org/anthology/P/P17/P17-1045.pdf)
 
-a multi-turn dialogue agent which helps users search Knowledge Bases (KBs) without composing complicated queries. 
+- a multi-turn dialogue agent which helps users search Knowledge Bases (KBs) without composing complicated queries. 
+- replace symbolic queries with an induced “soft” posterior distribution over the KB that indicates which entities the user is interested in.
+
+### Background
+
+How a Knowledge base bot typically works: semantic parsing on the input to construct a symbolic query and query on the knowledge base. Drawback of this method is that:
+1. the retrieved results do not carry any information about uncertainty in semantic parsing, and 
+2. the retrieval operation is non differentiable, and hence the parser and dialog policy are trained separately.
 
 
 ### Model
+<img src="images/Entity-centric-KB.png" width="400px" />
+Knowledge base: rows correspond to the unique head entities, columns correspond to the unique relationship types, and some entries may be missing. 
 
+<img src="images/KB-InfoBot.png" width="400px" />
 
+- a belief tracker module for identifying user intents, extracting associated slots, and tracking the dialogue state
+- an interface with the database to query for relevant results
+- a summary module to summarize the state into a vector
+- a dialogue policy which selects the next system action based on current state
 
 ### Experiment
 
 ### Comments
+
+### Related work
+
+- [A User Simulator for Task-Completion Dialogues](https://arxiv.org/abs/1612.05688)
+- [A Network-based End-to-End Trainable Task-oriented Dialogue System](https://arxiv.org/abs/1604.04562)
 
 ---
 
@@ -36,6 +55,8 @@ a novel framework based on conditional variational autoencoders that captures th
 
 
 ### Model
+<img src="images/kgCVAE.png" width="800px" />
+
 - the model uses latent variables to learn a distribution over potential conversational intents and generates diverse responses using only greedy decoders. 
 - use CVAE instead of Seq2Seq to generate diverse utterances
 - use linguistic features as extra hidden variable to generate responses
@@ -59,6 +80,7 @@ a novel framework based on conditional variational autoencoders that captures th
 
 ### Model
 
+<img src="images/HCN" width="800px" />
 
 
 ### Experiment
@@ -101,8 +123,27 @@ a neural model with dynamic knowledge graph embeddings that evolve as the dialog
 
 
 
+---
 
-[Neural Belief Tracker: Data-Driven Dialogue State Tracking](http://aclweb.org/anthology/P/P17/P17-1163.pdf)
+## [Neural Belief Tracker: Data-Driven Dialogue State Tracking](http://aclweb.org/anthology/P/P17/P17-1163.pdf)
+
+belief tracker: estimates the user's goal at every step of the dialog. The dialogue state tracking (DST) component of an SDS serves to interpret user input and update the belief state, which is the system’s internal representation of the state of the conversation.
+
+Neural Belief Tracking (NBT): reason over pre-trained word vectors, learning to compose them into distributed representations of user utterances and dialogue context. 
+
+### Model
+
+The proposed models couple SLU and DST, efficiently learning to handle variation without requiring any hand-crafted resources.
+
+<img src="images/NeuralBeliefTracker.png" width="800px" />
+
+
+
+
+### Comments
+
+
+---
 
 [Are you asking the right questions? Teaching Machines to Ask Clarification Questions](http://aclweb.org/anthology/P/P17/P17-3006.pdf)
 how can we teach machines to ask clarification questions when faced with uncertainty
