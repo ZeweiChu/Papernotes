@@ -109,12 +109,28 @@ attention-based sequence learning model for the task and investigate the effect 
 Task: answering sequences of simple but inter-related questions. semantic parsing for answering sequences of simple related questions
 Dataset: WikiTableQuestions(http://www.cs.stanford.edu/people/ppasupat/resource/ACL2015-paper.pdf : answering complex questions on semi-structured tables using question-answer pairs as supervision.)
 
-
-
-
 ---
 
 ## [Reading Wikipedia to Answer Open-Domain Questions](http://aclweb.org/anthology/P/P17/P17-1171.pdf)
+
+Open-domain question answering using Wikipedia as the unique knowledge source. 
+
+### Model
+
+The model combines a search component based on bigram hashing and TF-IDF matching with a multi-layer recurrent neural network model trained to detect answers in Wikipedia paragraphs
+
+- the Document Retriever module for finding relevant articles and 
+- a machine comprehension model, Document Reader, for extracting answers from a single document or a small collection of docu- ments.
+
+<img src="images/WikiOpenQA.png" width="800px" />
+
+1. Document Retriver to retrive relevant articles. Articles and questions are compared as TF-IDF weighted bag-of-word vectors and n-gram features. 
+
+2. Document Reader: attentive reader. 
+
+### Comments
+
+The task is similar to [Coarse-to-Fine Question Answering for Long Documents](http://aclweb.org/anthology/P/P17/P17-1020.pdf). The search space of Wiki document is even bigger than a long document. 
 
 ---
 ## [Improved Neural Relation Detection for Knowledge Base Question Answering](http://aclweb.org/anthology/P/P17/P17-1053.pdf)
