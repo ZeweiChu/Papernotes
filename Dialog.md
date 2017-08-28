@@ -7,9 +7,8 @@
 - How to generate dialog: Seq2Seq, reinforcement learning with policy gradient
 - Dialog diversity: Conditional variational autoencoder
 - Knowledge base: soft posterior over the KB
+- Dialog evaluation: BLEU(not so good), Adem
 - State tracking: 
-- Dialog evaluation: BLEU(not so good), Adem, 
-
 
 
 
@@ -28,7 +27,9 @@ How a Knowledge base bot typically works: semantic parsing on the input to const
 
 
 ### Model
+
 <img src="images/Entity-centric-KB.png" width="400px" />
+
 Knowledge base: rows correspond to the unique head entities, columns correspond to the unique relationship types, and some entries may be missing. 
 
 <img src="images/KB-InfoBot.png" width="400px" />
@@ -102,10 +103,12 @@ a response selected by a TF-IDF retrieval-based model, (2) a response selected b
 ### Model
 
 - hierarchical RNN to predict human scores: ADEM learns distributed representations of the context, model response, and reference response using a hierarchical RNN encoder. 
-![Adem Model](images/Adem.png)
+
+<img src="images/Adem.png" width="400px" />
 
 - we train the encoder as part of a neural dialogue model.
-![VHRED](images/VHRED.png)
+
+<img src="images/VHRED.png" width="400px" />
 
 ### Experiment
 

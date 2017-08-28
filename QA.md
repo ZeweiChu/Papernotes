@@ -5,8 +5,9 @@
 
 ## Highlights
 
-- Knowledge based question answering
+- Knowledge based question answering, using external knowledge for question answering (Wikipedia). 
 - Answer questions with longer document
+- Knowledge representation, in my opinion, is the key to answer questions of open-domain or long documents. 
 - Transfer learning in question answering on different datasets
 - Systems: Attention visualization system. 
 
