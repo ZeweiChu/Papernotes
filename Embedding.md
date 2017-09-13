@@ -33,21 +33,16 @@ Deeper, more complex models are preferable for representations to be used in sup
 <img src="images/fastsent2.png" width="400px" />
 
 
-## [Fine-Grained Analysis of 
-Sentence
-Embeddings usning Auxiliary Prediction Tasks](https://arxiv.org/pdf/1608.04207.pdf)
+## [Fine-Grained Analysis of Sentence Embeddings usning Auxiliary Prediction Tasks](https://arxiv.org/pdf/1608.04207.pdf)
 
 
 ## [LSTM Neural Reordering Feature for Statistical Machine Translation](http://www.aclweb.org/anthology/N16-1112)
 
-## [A Dependency-Based Neural Reordering Model for
-Statistical Machine Translation](https://arxiv.org/pdf/1702.04510.pdf)
+## [A Dependency-Based Neural Reordering Model for Statistical Machine Translation](https://arxiv.org/pdf/1702.04510.pdf)
 
-## [Deep Sentence Embedding Using Long
-Short-Term Memory Networks: Analysis and
-Application to Information Retrieval](https://arxiv.org/pdf/1502.06922.pdf)
+## [Deep Sentence Embedding Using Long Short-Term Memory Networks: Analysis and Application to Information Retrieval](https://arxiv.org/pdf/1502.06922.pdf)
 
-## [](https://openreview.net/pdf?id=S1AG8zYeg)
+## [Sentence Ordering Using Recurrent Neural Networks](https://openreview.net/pdf?id=S1AG8zYeg)
 
 ## [One Model To Learn Them All](https://arxiv.org/pdf/1706.05137.pdf)
 
