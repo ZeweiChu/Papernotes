@@ -13,7 +13,7 @@
 
 
 
-## In ACL 2017
+# In ACL 2017
 
 ## [Question Answering through Transfer Learning from Large Fine-grained Supervision Data](http://aclweb.org/anthology/P/P17/P17-2081.pdf)
 
@@ -150,6 +150,20 @@ This work is a good visualization system for attention based QA models.
 <img src="images/Non-Factoid-Interface.png" width="400px" />
 
 [code](https://github.com/UKPLab/acl2017-non-factoid-qa)
+
+
+
+# In EMNLP 2017
+
+## [Two-Stage Synthesis Networks for Transfer Learning in Machine Comprehension](https://arxiv.org/pdf/1706.09789.pdf)
+
+Given a high-performing MC model in one domain, our technique aims to answer questions about documents in another domain, where we use no labeled data of question-answer pairs.
+
+we address this problem in MC through a two-stage synthesis network (SynNet). The SynNet generates synthetic question-answer pairs over paragraphs in a new domain that are then used in place of human-generated annotations to finetune a MC model trained on the original domain.
+
+## Method
+
+In our approach, we decompose the process of generating question-answer pairs into two steps, answer generation conditioned on the paragraph, and question generation conditioned on the para- graph and answer. We generate the answer first be- cause answers are usually key semantic concepts, while questions can be viewed as a full sentence composed to inquire the concept.
 
 
 
